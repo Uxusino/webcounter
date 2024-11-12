@@ -14,3 +14,9 @@ class Counter:
 
     def reset(self):
         self.value = self._initial_value
+
+    def set(self, value):
+        try:
+            self.value = int(value)
+        except:
+            return
